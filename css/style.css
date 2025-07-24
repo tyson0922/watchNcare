@@ -1,0 +1,133 @@
+/* 전체 페이지 공통 스타일 */
+body {
+    margin: 0;                      /* 기본 여백 제거 */
+    padding: 0;                     /* 안쪽 여백 제거 */
+    height: 100vh;                  /* 화면 높이 전체 사용 */
+    width: 100vw;                   /* 화면 너비 전체 사용 */
+    font-family: 'Noto Sans KR', sans-serif; /* 웹폰트 적용 (한글용) */
+
+    background-image: url('../images/bgFamily.png');  /* 배경 이미지 경로 */
+    background-size: cover;         /* 화면 크기에 맞게 이미지 확대/축소 */
+    background-repeat: no-repeat;   /* 이미지 반복 없음 */
+    background-position: center center; /* 이미지 중앙 정렬 */
+    background-attachment: fixed;   /* 스크롤해도 배경은 고정 */
+}
+
+/* 상단 헤더 영역 */
+.header {
+    display: flex;                         /* 내부 요소 가로 정렬 */
+    justify-content: space-between;       /* 좌우 끝에 정렬 */
+    align-items: center;                  /* 수직 가운데 정렬 */
+    padding: 20px 60px;                   /* 위아래 20px, 좌우 60px 여백 */
+    background-color: rgba(255, 255, 255, 0.9); /* 반투명 흰색 배경 */
+}
+
+/* 로고와 텍스트 영역 */
+.header-logo {
+    display: flex;               /* 이미지와 텍스트 나란히 */
+    align-items: center;        /* 수직 정렬 */
+    font-size: 28px;            /* 글씨 크기 */
+    font-weight: bold;          /* 굵은 글씨 */
+}
+
+/* 로고 이미지 스타일 */
+.header-logo img {
+    width: 30px;                /* 너비 30px */
+    margin-right: 10px;         /* 오른쪽 여백 */
+}
+
+/* 네비게이션 메뉴 영역 */
+.nav {
+    display: flex;              /* 메뉴들을 가로 정렬 */
+    gap: 30px;                  /* 메뉴 사이 간격 */
+    font-size: 18px;            /* 글씨 크기 */
+}
+
+/* 메뉴 항목 링크 스타일 */
+.nav a {
+    text-decoration: none;      /* 밑줄 제거 */
+    color: #000;                /* 글씨 색: 검정 */
+}
+
+/* 로그인 버튼 스타일 */
+.login-btn {
+    background-color: #007bff;  /* 파란색 배경 */
+    color: white;               /* 흰색 글자 */
+    padding: 8px 20px;          /* 안쪽 여백 */
+    border: none;               /* 테두리 없음 */
+    border-radius: 20px;        /* 모서리 둥글게 */
+    font-weight: bold;          /* 글씨 굵게 */
+}
+
+/* 메인 콘텐츠 컨테이너 */
+.main-container {
+    margin-top: 250px;          /* 위에 헤더와 간격 */
+    text-align: center;         /* 가운데 정렬 */
+    color: #fff;                /* 기본 텍스트 색상: 흰색 */
+}
+
+/* 가족 관리 박스 (파란 박스) */
+.family-box {
+    background-color: #007bff;  /* 파란색 배경 */
+    width: 350px;               /* 너비 250px */
+    height: 350px;              /* 높이 200px */
+    margin: 0 20px 20px;        /* 좌우 여백 20px, 아래 여백 20px */
+    padding: 20px;              /* 안쪽 여백 */
+    border-radius: 15px;        /* 모서리 둥글게 */
+    font-size: 24px;            /* 글씨 크기 */
+    font-weight: bold;          /* 글씨 굵게 */
+    justify-content: center;    /* 가운데 정렬 */
+    margin-bottom: 5px;
+}
+
+/* 설명 텍스트 (사용 안함 주석됨) */
+.description {
+    margin-bottom: 40px;        /* 아래 여백 */
+    font-size: 16px;            /* 글씨 크기 */
+}
+
+/* 카드 전체 묶는 컨테이너 */
+.cards {
+    display: flex;              /* 가로 정렬 */
+    justify-content: center;    /* 가운데 정렬 */
+    gap: 30px;                  /* 카드 간 간격 */
+    flex-wrap: wrap;            /* 줄바꿈 허용 (반응형 대응) */
+    align-items: center;      /* 가운데 정렬 (가로축) */
+}
+
+/* 각 카드 개별 스타일 */
+.card {
+    background-color: rgba(255,255,255,0.95); /* 반투명 흰 배경 */
+    border-radius: 15px;        /* 모서리 둥글게 */
+    padding: 20px;              /* 안쪽 여백 */
+    width: 300px;               /* 너비 */
+    height: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* 그림자 효과 */
+    color: #000;                /* 글씨 색 검정 */
+}
+
+/* 카드 안의 이미지 */
+.card img {
+    width: 40px;                /* 너비 40px */
+    margin-bottom: 10px;        /* 아래 여백 */
+}
+
+/* 카드 제목 스타일 */
+.card-title {
+    font-weight: bold;          /* 굵은 글씨 */
+    margin-bottom: 10px;        /* 아래 여백 */
+}
+
+/* 검색창 컨테이너 */
+.search-box {
+    margin-top: 40px;           /* 위 요소와 간격 */
+}
+
+/* 검색 입력창 스타일 */
+.search-input {
+    padding: 12px 20px;         /* 안쪽 여백 */
+    width: 350px;               /* 너비 */
+    border: 2px solid #007bff;  /* 파란 테두리 */
+    border-radius: 30px;        /* 양 끝 둥글게 */
+    font-size: 16px;            /* 글씨 크기 */
+}

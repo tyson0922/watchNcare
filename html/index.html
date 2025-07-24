@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- 이 문서가 HTML5 문서임을 나타냄 -->
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- 한글 인코딩 설정 (한글이 깨지지 않도록) -->
+
+    <title>결봄 - 가족 건강관리</title>
+    <!-- 브라우저 탭에 표시될 제목 -->
+
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- 외부 CSS 파일 연결 (디자인 적용용) -->
+</head>
+<body>
+
+<!-- 상단 헤더 영역 시작 -->
+<div class="header">
+    <!-- 왼쪽 로고와 텍스트 -->
+    <div class="header-logo">
+        <img src="/images/logo.png" alt="로고">
+        <!-- 사이트 로고 이미지 -->
+        곁봄
+        <!-- 사이트 이름 텍스트 -->
+    </div>
+
+    <!-- 가운데 네비게이션 메뉴 -->
+    <div class="nav">
+        <a href="#">진료 등록</a>     <!-- 메뉴1 -->
+        <a href="#">기록 보기</a>     <!-- 메뉴2 -->
+        <a href="#">가족 등록</a>     <!-- 메뉴3 -->
+    </div>
+
+    <!-- 오른쪽 로그인 버튼 -->
+    <button class="login-btn">로그인 / Login</button>
+</div>
+<!-- 상단 헤더 영역 끝 -->
+
+<!-- 메인 콘텐츠 영역 시작 -->
+<div class="main-container">
+
+    <!-- 카드 및 가족 박스를 담는 영역 -->
+    <div class="cards">
+
+        <!-- 파란색 가족 관리 박스 -->
+        <div class="family-box">가족 관리</div>
+
+        <!-- 가족 관리 설명은 주석 처리된 상태 -->
+        <!--
+        <div class="description">
+            건강 관리에 관심이 필요한 가족을 등록하세요.<br>
+            가족의 건강검진 혹은 진료 내용을 확인해보세요.
+        </div>
+        -->
+
+        <!-- 카드 1: 스캔 -->
+        <div class="card">
+            <img src="/images/icon_scan.png" alt="스캔">
+            <div class="card-title">스캔</div>
+            건강검진 서류, 일반 병원 진단서 등<br>
+            각종 의료 서류를 첨부하세요
+        </div>
+
+        <!-- 카드 2: 국민건강보험공단 조회 -->
+        <div class="card">
+            <img src="/images/icon_nhic.png" alt="국민건강보험공단">
+            <div class="card-title">국민건강보험공단 조회</div>
+            건강검진 기록을 조회하세요
+        </div>
+
+        <!-- 카드 3: 검진 기록 조회 -->
+        <div class="card">
+            <img src="/images/icon_record.png" alt="기록 조회">
+            <div class="card-title">검진 기록 조회</div>
+            등록된 건강검진 및 진료 내역을<br>
+            확인하세요
+        </div>
+    </div>
+    <!-- 카드 및 가족 박스 영역 끝 -->
+
+    <!-- 검색 입력창 영역 -->
+    <div class="search-box">
+        <input type="text" class="search-input" placeholder="AI에게 의료상담을 받아보세요" />
+        <!-- 텍스트 입력 필드, 사용자가 AI에게 질문할 수 있도록 -->
+    </div>
+
+</div>
+<!-- 메인 콘텐츠 영역 끝 -->
+
+<!-- 자바스크립트 파일 연결 -->
+<script src="js/main.js"></script>
+<!-- 동작 제어를 위한 JavaScript 코드 (현재는 내용 없음) -->
+
+</body>
+</html>
