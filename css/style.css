@@ -61,28 +61,33 @@ body {
 
 /* 메인 콘텐츠 컨테이너 */
 .main-container {
-    margin-top: 250px;          /* 위에 헤더와 간격 */
+    margin-top: 170px;          /* 위에 헤더와 간격 */
     text-align: center;         /* 가운데 정렬 */
     color: #fff;                /* 기본 텍스트 색상: 흰색 */
 }
 
+
+
 /* 가족 관리 박스 (파란 박스) */
 .family-box {
     background-color: #007bff;  /* 파란색 배경 */
-    width: 350px;               /* 너비 250px */
-    height: 350px;              /* 높이 200px */
-    margin: 0 20px 20px;        /* 좌우 여백 20px, 아래 여백 20px */
-    padding: 20px;              /* 안쪽 여백 */
+    width: 350px;               /* 너비 */
+    height: 350px;              /* 높이 */
+    margin: 20px 20px 20px;     /* 위, 좌우, 아래 여백 */
+    padding: 40px 20px 20px;    /* 위 여백만 키워서 글씨 아래로 */
     border-radius: 15px;        /* 모서리 둥글게 */
-    font-size: 24px;            /* 글씨 크기 */
+    font-size: 50px;            /* 글씨 크기 */
     font-weight: bold;          /* 글씨 굵게 */
-    justify-content: center;    /* 가운데 정렬 */
-    margin-bottom: 5px;
+    display: flex;              /* Flexbox 사용 */
+    flex-direction: column;     /* 위에서 아래 방향 */
+    justify-content: flex-start;/* 위쪽 정렬 (기본값) */
+    color: white;               /* 글자색 흰색 */
 }
+
 
 /* 설명 텍스트 (사용 안함 주석됨) */
 .description {
-    margin-bottom: 40px;        /* 아래 여백 */
+    margin-top: 100px;        /* 아래 여백 */
     font-size: 16px;            /* 글씨 크기 */
 }
 
@@ -97,7 +102,7 @@ body {
 
 /* 각 카드 개별 스타일 */
 .card {
-    background-color: rgba(255,255,255,0.95); /* 반투명 흰 배경 */
+    background-color: rgba(255,255,255,0.85); /* 반투명 흰 배경 */
     border-radius: 15px;        /* 모서리 둥글게 */
     padding: 20px;              /* 안쪽 여백 */
     width: 300px;               /* 너비 */
@@ -108,14 +113,18 @@ body {
 
 /* 카드 안의 이미지 */
 .card img {
-    width: 40px;                /* 너비 40px */
+    width: 60px;                /* 너비 40px */
     margin-bottom: 10px;        /* 아래 여백 */
+    margin-top: 20px;
 }
 
 /* 카드 제목 스타일 */
 .card-title {
     font-weight: bold;          /* 굵은 글씨 */
+    font-size: 30px;
     margin-bottom: 10px;        /* 아래 여백 */
+    margin-top: 10px;
+
 }
 
 /* 검색창 컨테이너 */
