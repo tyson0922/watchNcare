@@ -1,0 +1,150 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+/* 카드 묶음 */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+/* 카드 공통 */
+.card {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    padding: 20px;
+    width: 800px;
+    height: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #8D8989;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 120px;
+    margin: 20px auto 10px auto;
+    display: block;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.card-info {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* 스크롤 영역 */
+.scroll-area-right {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px; /* 원하는 만큼만 띄움 */
+    height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+/* 한눈에 보기 버튼 */
+.overview-btn {
+    margin: 0 auto;
+    display: inline-block;
+    margin-top: 20px;          /* 살짝 아래로 내림 */
+    padding: 10px 16px;        /* 버튼처럼 안쪽 여백 */
+    color: black;
+    border-radius: 8px;        /* 둥근 모서리 */
+    cursor: pointer;           /* 마우스 올리면 손가락 모양 */
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    text-decoration-line:  none;
+}
+
+/* 마우스 올렸을 때 효과 */
+.overview-btn:hover {
+    transform: translateY(-2px); /* 약간 올라가는 느낌 */
+}
+
+/* 리스트 하나 */
+.record {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    width: 700px; /* 카드 내부 padding 고려해서 꽉 차게 */
+    box-sizing: border-box; /* padding 포함한 너비로 계산되게 */
+
+    height: 70px; /* 높이 약간 늘림 (디자인 여유) */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.right {
+    border-left:  20px solid #1977cc;
+}
+
+.record-date {
+    background-size: 40% 100%;      /* 배경을 요소 전체 크기로 설정 */
+    background-repeat: no-repeat;    /* 반복 안 함 */
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    color: #000;
+    margin-left: -20px;
+    font-weight: bold;
+}
+
+.record-hospital {
+    flex: 1;
+    text-align: center;
+    color: #000;
+}
+.record-department {
+    flex: 1;
+    text-align: center;
+    color: #000;
+}
+
+.record-button {
+    padding: 5px 15px;
+    background-color: #eee;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.record-button:hover {
+    background-color: #ddd;
+}
+
+.detail {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
