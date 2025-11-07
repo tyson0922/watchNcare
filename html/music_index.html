@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>사이트 제목</title>
+    <link rel="stylesheet" href="../css/music_index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body style="background-color: #0B0B0B">
+<header class="header">
+    <!-- 로고 / 검색창 / 사용자 프로필 -->
+    <nav class="navbar">
+        <!-- 상단 네비게이션 메뉴 -->
+        <div class="nav-container">
+            <div class="nav-left">
+                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+            </div>
+            <div class="nav-center">
+                <div class="logo area">
+                    <img class="logo style-scope ytmusic-logo" alt="" src="//music.youtube.com/img/on_platform_logo_dark.svg">
+                </div>
+                <!--검색바-->
+                <div class="search-area area">
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                    </button>
+                    <input
+                            type="text"
+                            class="search-input"
+                            placeholder="노래, 앨범, 아티스트, 팟캐스트 검색"
+                    />
+                </div>
+            </div>
+            <div class="nav-right">
+                <button class="cast">
+                    <i class="fa-solid fa-tv"></i>
+                </button>
+                <img id="img" draggable="false" class="style-scope yt-img-shadow" alt="" src="https://yt3.ggpht.com/Gzme6NO3PrCrMFJJSouPrrDajltpinEGJaRB7p0MU3BZTebxNG2CXczCpq69HaIUgx9F4Gqilw=s108-c-k-c0x00ffffff-no-rj">
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+
+<div class="layout">
+    <aside class="sidebar">
+        <!-- 왼쪽 사이드바 (메뉴, 필터, 카테고리 등) -->
+        <div class="side-bar-home">
+            <i class="fa-solid fa-house"></i>
+            <a>홈</a>
+        </div>
+        <div class="side-bar-search">
+            <i class="fa-solid fa-compass"></i>
+            <a>둘러보기</a>
+        </div>
+        <div class="side-bar-archive">
+            <i class="fa-solid fa-bookmark"></i>
+            <a>보관함</a>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <!-- 메인 콘텐츠 21개 (그리드나 flex로 배치) -->
+        <section class="content-grid">
+            <article class="card">
+                <div class="genre-buttons">
+                    <button>팟캐스트</button>
+                    <button>잠잘 때</button>
+                    <button>운동</button>
+                    <button>행복한 기분</button>
+                    <button>휴식</button>
+                    <button>슬픔</button>
+                    <button>에너지 충전</button>
+                    <button>출퇴근길</button>
+                </div>
+            </article>
+            <article class="card">
+                <header class="card-header">
+                    <div class="card-info">
+                        <img class="profile-img" src="https://yt3.ggpht.com/Gzme6NO3PrCrMFJJSouPrrDajltpinEGJaRB7p0MU3BZTebxNG2CXczCpq69HaIUgx9F4Gqilw=s108-c-k-c0x00ffffff-no-rj" alt="프로필">
+                        <div class="text-info">
+                            <span class="channel-name">지주우TV</span>
+                            <h2>다시 듣기</h2>
+                        </div>
+                    </div>
+
+                    <div class="card-actions">
+                        <button class="more-btn">더보기</button>
+                        <button class="arrow-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button class="arrow-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </header>
+
+                <section class="card-body">
+                    <figure class="album">
+
+                        <div class="album-image">
+                            <img src="../images/newjeans.png" alt="앨범 커버" class="album-img">
+                            <button class="play-btn"><i class="fa-solid fa-play fa-4x"></i></button>
+                            <button class="options-btn"><i class="fa-solid fa-ellipsis-vertical fa-2x"></i></button>
+                        </div>
+
+                        <figcaption class="content">
+                            <div class="title">NewJeans 2nd EP 'Get Up'</div>
+                            <div class="singer">EP • 2023년</div>
+                        </figcaption>
+                    </figure>
+                    <figure class="album">
+
+                        <div class="album-image">
+                            <img src="../images/cupid.png" alt="앨범 커버" class="album-img">
+                            <button class="play-btn"><i class="fa-solid fa-play fa-4x"></i></button>
+                            <button class="options-btn"><i class="fa-solid fa-ellipsis-vertical fa-2x"></i></button>
+                        </div>
+
+                        <figcaption class="content">
+                            <div class="title">Cupid - Twin Ver. (FIFTY FIFTY)</div>
+                            <div class="singer">노래 • 피프티 피프티</div>
+                        </figcaption>
+                    </figure>
+                    <figure class="album">
+
+                        <div class="album-image">
+                            <img src="../images/nirvana.png" alt="앨범 커버" class="album-img">
+                            <button class="play-btn"><i class="fa-solid fa-play fa-4x"></i></button>
+                            <button class="options-btn"><i class="fa-solid fa-ellipsis-vertical fa-2x"></i></button>
+                        </div>
+
+                        <figcaption class="content">
+                            <div class="title">Nevermind</div>
+                            <div class="singer">앨범 • 1991년</div>
+                        </figcaption>
+                    </figure>
+                </section>
+
+            </article>
+            <!-- ... -->
+            <article class="card">
+                <header class="card-header">
+                    <div class="card-info">
+                        <div class="text-info">
+                            <h2>빠른 선곡</h2>
+                        </div>
+                    </div>
+
+                    <div class="card-actions">
+                        <button class="more-btn">모두 재생</button>
+                        <button class="arrow-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button class="arrow-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </header>
+                <section class="track-item">
+                    <img src="../images/newjeans.png" alt="앨범 커버" class="track-cover">
+
+                    <div class="track-info">
+                        <div class="track-title">Lithium</div>
+                        <div class="track-meta">
+                            <span class="artist">Nirvana</span>
+                            <span class="separator">•</span>
+                            <span class="plays">5억회 재생</span>
+                            <span class="separator">•</span>
+                            <span class="album-name">Nevermind</span>
+                        </div>
+                    </div>
+                </section>
+                <section class="track-item">
+                    <img src="../images/scott.png" alt="앨범 커버" class="track-cover">
+
+                    <div class="track-info">
+                        <div class="track-title">Lithium</div>
+                        <div class="track-meta">
+                            <span class="artist">Nirvana</span>
+                            <span class="separator">•</span>
+                            <span class="plays">5억회 재생</span>
+                            <span class="separator">•</span>
+                            <span class="album-name">Nevermind</span>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </section>
+    </main>
+</div>
+
+<footer class="footer">
+    <!-- 선택사항: 푸터 -->
+</footer>
+</body>
+</html>
